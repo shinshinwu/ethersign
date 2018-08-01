@@ -4,7 +4,7 @@
       <div class="content">
         <h2>The Technology</h2>
         <hr>
-        <p>EtherSign is built with <a href="https://ethereum.org" target="_blank">Solidity</a>, <a href="https://buefy.github.io/" target="_blank">Beufy</a> / <a href="https://bulma.io/" target="_blank">Bulma framework</a> and is hosted on <a href="https://surge.sh/" target="_blank">Surge</a>. The entire app is static and serverless. It relies on the Ethereum blockchain for storage. Currently, the underlying contract is only deployed on the Rinkeby testnet.</p>
+        <p>EtherSign is built with <a href="http://vuejs.org/" target="_blank">Vue</a>, <a href="https://ethereum.org" target="_blank">Solidity</a>, <a href="https://buefy.github.io/" target="_blank">Beufy</a> / <a href="https://bulma.io/" target="_blank">Bulma framework</a> and is hosted on <a href="https://surge.sh/" target="_blank">Surge</a>. The entire app is static and serverless. It relies on the Ethereum blockchain for storage. Currently, the underlying contract is only deployed on the Rinkeby testnet.</p>
 
         <h2>Project Motivation</h2>
         <hr>
