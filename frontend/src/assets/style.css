@@ -1,0 +1,166 @@
+/*Navbar style*/
+.navbar.is-primary .navbar-burger {
+  color: #fff;
+}
+.navbar-end .button {
+  padding: 15px 20px;
+}
+
+.navbar-end .button .icon:first-child {
+  margin-right: 0.25em;
+}
+
+a.navbar-item.logo-img {
+  margin-right: 1rem;
+  padding: 0;
+  margin-left: 0.5rem;
+}
+
+@media (max-width:769px) {
+  a.navbar-item.logo-img img {
+    margin-left: 1rem;
+  }
+}
+
+a.navbar-item.logo-img img {
+  max-height: 5rem;
+  height: 60px;
+}
+
+.navbar-item .icon:only-child {
+  margin-right: 0.25rem;
+}
+
+.button.twitter-btn {
+  border: transparent;
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+.button.twitter-btn:hover,
+.button.twitter-btn:focus {
+  background-color: #1b95e0;
+}
+
+.navbar .mdi-rocket.mdi-24px.mdi:before {
+  font-size:22px;
+  color: #1da1f2;
+}
+
+/*Homepage style*/
+.medium-spacing {
+  padding: 5rem 1rem;
+}
+
+.medium-spacing-top {
+  padding-top: 5rem;
+}
+
+@media screen and (min-width: 769px) {
+  .hero.is-medium .hero-body {
+    padding-top: 5rem;
+    padding-bottom:7rem;
+  }
+
+  .button.align-button {
+    margin-top: -5px;
+    margin-left: 10px;
+  }
+}
+
+h1.title.intro-title {
+  font-size: 3.3em;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+h2.title.intro-title {
+  font-size: 2.8em;
+  margin-bottom: 5rem;
+}
+
+.hero.is-primary .subtitle {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.about-image {
+  position: relative;
+  z-index: 99;
+  margin-right: -70px;
+  padding: 40px 70px;
+  background: #fff;
+  border-radius: 60px 60px 60px 200px;
+  box-shadow: 0 20px 60px rgba(93, 70, 232, 0.1);
+}
+
+@media (max-width:769px) {
+  .about-image {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
+
+section.hero {
+  background: linear-gradient(#7957d5, #6e63d3, #9b67df);
+}
+
+.right-margin {
+  margin-right: 1.5rem !important;
+}
+
+.has-text-orange {
+  color: #FF9B71 !important;
+}
+
+.has-text-pink {
+  color: #FED4E7 !important;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.card-content .title,
+.card-content .subtitle {
+  text-align: center;
+}
+.card-content .subtitle {
+  margin-bottom: 1.8rem !important;
+}
+
+.card-content {
+  padding-bottom: 2.2rem;
+}
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.features img {
+  min-width: 150px;
+}
+
+.content h4.title {
+  font-size: 1.7em;
+  margin-top: 1.7rem;
+}
+
+section.features .column {
+  padding: 1rem;
+}
+
+.container.login-alert {
+  margin-bottom: 50px;
+}
+
+footer.footer {
+  padding: 2rem;
+}

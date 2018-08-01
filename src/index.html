@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>EtherSign - Document Signing On The Bloclchain</title>
+
+    <!-- Bulma based Buefy -->
+    <link href="css/materialdesignicons.css" rel="stylesheet">
+    <link href="css/buefy.css" rel="stylesheet">
+    <link href="css/spacinghelpers.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Load all the necessary Vue js files -->
+    <script src="js/vue.js"></script>
+    <script src="js/vuex.js"></script>
+    <script src="js/vue-router.js"></script>
+    <script src="js/web3.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar is-transparent m--margin-top-10">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+          </a>
+          <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="https://bulma.io/">
+              Home
+            </a>
+
+            <router-link to="/foo" class="navbar-item">Go Foo</router-link>
+            <router-link to="/bar" class="navbar-item">Go Bar</router-link>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="/documentation/overview/start/">
+                Docs
+              </a>
+              <div class="navbar-dropdown is-boxed">
+                <a class="navbar-item" href="/documentation/overview/start/">
+                  Overview
+                </a>
+                <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                  Modifiers
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <p class="control">
+                  <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                    <span class="icon">
+                      <i class="mdi mdi-bell"></i>
+                    </span>
+                    <span>
+                      Tweet
+                    </span>
+                  </a>
+                </p>
+                <p class="control">
+                  <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
+                    <span class="icon">
+                      <i class="mdi mdi-archive"></i>
+                    </span>
+                    <span>Download</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="columns m--margin-top-50">
+        <div v-if="loading" class="column has-text-centered">
+          <h1>Loading web3...</h1>
+        </div>
+
+        <div v-else class="column has-text-centered">
+          <p>{{ message }}</p>
+          <p>Current Network: {{ this.$store.state.web3.networkId }}</p>
+          <p>Coinbase: {{ this.$store.state.web3.coinbase }}</p>
+          <p>Delegate Address: {{ this.delegateAddress }}</p>
+        </div>
+      </div>
+
+
+      <section class="section">
+        <div class="container">
+          <h1 class="title">Routed Section</h1>
+          <router-view></router-view>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/buefy.js"></script>
+    <script data-main="js/app.js" src="js/require.js"></script>
+  </body>
+</html>
