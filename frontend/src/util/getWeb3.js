@@ -52,6 +52,7 @@ let getWeb3 = new Promise(function (resolve, reject) {
                 return web3js
               }
             }
+            networkId = 4
           }
 
           result = Object.assign({}, result, {networkId})

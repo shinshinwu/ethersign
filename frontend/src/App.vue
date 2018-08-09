@@ -56,7 +56,7 @@
                   </a>
                 </p>
                 <p class="control">
-                  <a class="button" href="https://github.com/shinshinwu/ethersign">
+                  <a class="button" href="https://github.com/shinshinwu/ethersign" target="_blank">
                     <b-icon icon="github-circle"></b-icon>
                     <span>Github</span>
                   </a>

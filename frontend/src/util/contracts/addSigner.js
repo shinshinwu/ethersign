@@ -4,7 +4,7 @@ const addSigner = (state, signer) => {
     state.contractInstance().methods.addSigner(state.document.returnValues.documentId, signer).send({from: state.web3.coinbase}
     ).on('receipt', (receipt) => {
       console.log('received the tx receipt')
-      resolve(receipt)
+      resolve(receipt.events.SignerAdded)
     })
   });
 };
