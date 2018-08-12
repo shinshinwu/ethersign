@@ -7,7 +7,7 @@ You can read up on the motivation and design decision in `design_pattern_decisio
 
 ## Visit the Deployed Dapp
 
-This app has been deployed to Surge and is now live, you can visit the site at [ethersign.surge.sh](ethersign.surge.sh).  You do not need to have Metamask or Mist installed to view sample contract usages - information will be fetched via Infura instead. However if you wish to create and sign document yourself, please make sure you have Metamask installed and loggin into your Rinkeby account and have accquired some test ethers.
+This app has been deployed to Surge and is now live, you can visit the site at [ethersign.surge.sh](https://ethersign.surge.sh).  You do not need to have Metamask or Mist installed to view sample contract usages - information will be fetched via Infura instead. However if you wish to create and sign document yourself, please make sure you have Metamask installed and loggin into your Rinkeby account and have accquired some test ethers.
 
 **Some sample use cases**:
 

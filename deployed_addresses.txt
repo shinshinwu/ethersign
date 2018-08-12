@@ -1,0 +1,3 @@
+Deployed address on Rinkeby:
+
+0xffbed5d4c0798d672b641da273af9e6e834be4b8
